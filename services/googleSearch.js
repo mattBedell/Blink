@@ -15,6 +15,12 @@ function textSearch(req, res, next) {
     next(err);
   })
 }
+function imgSearch(req, res, next) {
+  let prevResults = res.data;
+  prevResults.forEach((result) => {
+
+  })
+}
 module.exports = {
   textSearch
 }
