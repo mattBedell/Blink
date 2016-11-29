@@ -6,7 +6,7 @@ const { addToBucket, getBucketPending, getBucketCompleted, completeEvent, delete
 const sendResponse = (req, res) => res.json(res.data);
 const sessionErrorHandler = (err, req, res, next) => {
   console.log('no session, redirect to login');
-  res.data = {redirectUrl: 'http://localhost:3001'}
+  res.data = {redirectUrl: 'https://wid-blink.herokuapp.com/'}
   return res.json(res.data)
 }
 // routes for user login

@@ -29,8 +29,8 @@ app.use(session({
 app.use('/', express.static(path.join(__dirname, 'views/')))
 
 // serve production react app
-// app.use('/app', express.static(path.join(__dirname, 'Blink/build')))
-// app.use('/static', express.static(path.join(__dirname, 'Blink/build/static')))
+app.use('/app', express.static(path.join(__dirname, 'Blink/build')))
+app.use('/static', express.static(path.join(__dirname, 'Blink/build/static')))
 
 // Generate link to google auth services
 app.use('/utils/createLoginLink', require('./routes/utils.js'))
