@@ -1,5 +1,7 @@
 ![screen shot 2016-11-28 at 7 01 19 pm](https://cloud.githubusercontent.com/assets/20446304/20691181/2e9656fe-b59d-11e6-8504-7d08dcc6f677.png)
 ****
+Deployed On: https://wid-blink.herokuapp.com/
+***
 **MISSION:** Our mission is to motivate millennials to fulfill their lifetime dreams/aspirations, and as a result live a more satisfied life.
 
 
@@ -58,4 +60,4 @@ https://wireframe.cc/2143Oj <— Dashboard
 https://wireframe.cc/JIuQSm <— Results/Bucket List
 
 ***
-Produced by: @mattbedell @olgasizovaga @JimmyDLA 
+Produced by: @mattbedell @olgasizovaga @JimmyDLA @BowenSkylar
