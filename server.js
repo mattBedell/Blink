@@ -26,11 +26,11 @@ app.use(session({
 // ----- routing
 
 // serve landing page
-app.use('/', express.static(path.join(process.env.PWD, '/views')))
+app.use('/', express.static(path.join(process.env.PWD, 'public/index.html')))
 
 // serve production react app
-app.use('/app', express.static(path.join(process.env.PWD, 'Blink/build')))
-app.use('/static', express.static(path.join(process.env.PWD, 'Blink/build/static')))
+app.use('/app', express.static(path.join(process.env.PWD, 'public/app.html')))
+app.use('/static', express.static(path.join(process.env.PWD, 'public/static')))
 
 // Generate link to google auth services
 app.use('/utils/createLoginLink', require('./routes/utils.js'))
