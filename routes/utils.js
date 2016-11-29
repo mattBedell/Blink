@@ -26,7 +26,7 @@ function getAuthUrl (clientId, clientSecret) {
 
 
 const createUrl = (req, res, next) => {
-  let myurl = getAuthUrl('491020538989-p7rt3a2bpl8qloj56qedsd327q5sg10p.apps.googleusercontent.com', 'UakPsyWEGXBp__cjsqcMB1hA');
+  let myurl = getAuthUrl(process.env.CLIENT_ID, process.env.CLIENT_SECRET);
   //console.log(myurl);
   res.authurl = myurl;
   next();
