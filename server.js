@@ -49,4 +49,4 @@ app.use('/api/checkSession', require('./routes/checkSession'))
 
 
 
-app.listen(process.env.PORT, console.log(`SERVER IS LISTENING ON ${PORT}`));
+app.listen(process.env.PORT);
