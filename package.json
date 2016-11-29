@@ -27,6 +27,7 @@
     "googleapis": "^14.2.0",
     "morgan": "^1.7.0",
     "node-fetch": "^1.6.3",
+    "path": "^0.12.7",
     "pg-promise": "^5.4.3"
   }
 }
