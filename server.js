@@ -25,7 +25,7 @@ app.use(session({
 // ----- routing
 
 // serve landing page
-app.use('/', express.static(path.join(process.env.PWD, 'public/index.html')))
+app.use('/', express.static(path.join(process.env.PWD, 'public/')))
 
 // serve production react app
 app.use('/app', express.static(path.join(process.env.PWD, 'public/app.html')))
