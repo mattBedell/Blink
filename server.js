@@ -28,9 +28,6 @@ app.use(session({
 app.use('', express.static(path.join(process.env.PWD, 'public/')))
 
 // serve production react app
-app.get('/', (req, res) => {
-  res.send('HERROOOOOOKUUUUUUUUUUUUU')
-})
 //app.use('/app', express.static(path.join(process.env.PWD, 'public/app.html')))
 //app.use('/static', express.static(path.join(process.env.PWD, 'public/static')))
 
