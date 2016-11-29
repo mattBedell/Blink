@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 const session = require('express-session');
 const google = require('googleapis');
 const gmail = google.plus('v1');
-const PORT = process.env.PORT || 3001;
+//const PORT = process.env.PORT || 3001;
 const app = express();
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -25,7 +25,7 @@ app.use(session({
 // ----- routing
 
 // serve landing page
-app.use('/', express.static(path.join(process.env.PWD, 'public/')))
+app.use('', express.static(path.join(process.env.PWD, 'public/')))
 
 // serve production react app
 app.use('/app', express.static(path.join(process.env.PWD, 'public/app.html')))
@@ -46,4 +46,4 @@ app.use('/api/checkSession', require('./routes/checkSession'))
 
 
 
-app.listen(PORT, console.log(`SERVER IS LISTENING ON ${PORT}`));
+app.listen(process.env.PORT, console.log(`SERVER IS LISTENING ON ${PORT}`));
