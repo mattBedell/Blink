@@ -26,7 +26,7 @@ app.use(session({
 // ----- routing
 
 // serve landing page
-app.use('/', express.static(path.join(__dirname, 'views/index.html')))
+app.use('/', express.static(path.join(__dirname, 'views/')))
 
 // serve production react app
 app.use('/app', express.static(path.join(__dirname, 'Blink/build')))
