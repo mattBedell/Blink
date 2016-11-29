@@ -2,7 +2,6 @@ const express = require('express');
 const logger = require('morgan');
 const path = require('path');
 const bodyParser = require('body-parser');
-require('dotenv').config()
 
 const session = require('express-session');
 const google = require('googleapis');
