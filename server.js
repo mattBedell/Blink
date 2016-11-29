@@ -7,7 +7,7 @@ require('dotenv').config()
 const session = require('express-session');
 const google = require('googleapis');
 const gmail = google.plus('v1');
-
+const PORT = process.env.PORT || 3001;
 const app = express();
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -45,6 +45,6 @@ app.use('/home', require('./routes/home.js'))
 app.use('/api', require('./routes/api.js'))
 app.use('/api/checkSession', require('./routes/checkSession'))
 
-const PORT = process.env.PORT || 3001;
+
 
 app.listen(PORT, console.log(`SERVER IS LISTENING ON ${PORT}`));
