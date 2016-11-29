@@ -2,7 +2,6 @@ const router = require('express').Router();
 const session = require('express-session');
 const google = require('googleapis');
 const OAuth2 = google.auth.OAuth2;
-require('dotenv').config()
 
 function getOAuthClient (clientId, clientSecret) {
     return new OAuth2(clientId, clientSecret, 'http://localhost:3001/logged/');
