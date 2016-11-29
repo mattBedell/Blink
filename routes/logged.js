@@ -4,7 +4,7 @@ const google = require('googleapis');
 const OAuth2 = google.auth.OAuth2;
 
 function getOAuthClient (clientId, clientSecret) {
-    return new OAuth2(clientId, clientSecret, 'http://localhost:3001/logged/');
+    return new OAuth2(clientId, clientSecret, 'https://wid-blink.herokuapp.com/logged/');
 }
 
 // http://voidcanvas.com/googles-oauth-api-node-js/
