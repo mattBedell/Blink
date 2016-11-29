@@ -28,8 +28,11 @@ app.use(session({
 app.use('', express.static(path.join(process.env.PWD, 'public/')))
 
 // serve production react app
-app.use('/app', express.static(path.join(process.env.PWD, 'public/app.html')))
-app.use('/static', express.static(path.join(process.env.PWD, 'public/static')))
+app.get('/', (req, res) => {
+  res.render('./public/index.html')
+})
+//app.use('/app', express.static(path.join(process.env.PWD, 'public/app.html')))
+//app.use('/static', express.static(path.join(process.env.PWD, 'public/static')))
 
 // Generate link to google auth services
 app.use('/utils/createLoginLink', require('./routes/utils.js'))
