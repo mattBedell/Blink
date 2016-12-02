@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 const session = require('express-session');
 const google = require('googleapis');
 const gmail = google.plus('v1');
-//const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3001;
 const app = express();
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -46,4 +46,4 @@ app.use('/api/checkSession', require('./routes/checkSession'))
 
 
 
-app.listen(process.env.PORT);
+app.listen(PORT);
